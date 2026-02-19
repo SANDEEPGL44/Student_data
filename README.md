@@ -1,42 +1,124 @@
-# Student_data
+# 🎓 Student Data – Django Practice Project
 
-Student_data is a basic Django project created for practicing Django ORM, QuerySets, and CRUD operations.
+A beginner-friendly Django project created for learning and practicing core Django concepts such as Models, ORM, QuerySets, Views, Templates, and CRUD operations.
 
-## Features
-- Add Student
-- View Students
-- Edit Student
-- Delete Student
+This project demonstrates relational database design and basic web application features using Django.
 
-## Technologies Used
-- Python
-- Django
-- SQLite
-- HTML / CSS
+---
 
-## Purpose of Project
-This project is built for learning purposes to understand:
+## 🚀 Features
 
-- Django project structure  
-- Models and migrations  
+- ✅ Student, Course, and Teacher models  
+- ✅ ForeignKey relationships  
+- ✅ Django ORM & QuerySet practice  
+- ✅ Function-Based Views (FBV)  
+- ✅ CRUD Operations (Add / Edit / Delete)  
+- ✅ Filtering & Ordering  
+- ✅ Pagination (5 records per page)  
+- ✅ Django Templates & Forms  
+- ✅ Admin Panel Integration  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Python, Django  
+- **Database:** SQLite  
+- **Frontend:** HTML, Django Templates  
+
+---
+
+## 📂 Project Structure
+
+Students_data/
+│
+├── main/ # Django application
+│ ├── models.py # Models (Student, Course, Teacher)
+│ ├── views.py # Views & Logic
+│ ├── urls.py # App Routes
+│ ├── forms.py # Django Forms
+│ └── templates/ # HTML Templates
+│
+├── myproject/ # Project Settings
+├── manage.py # Django Manager
+├── db.sqlite3 # Database
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Activate Virtual Environment
+
+.venv\Scripts\activate
+
+shell
+Copy code
+
+### 2️⃣ Apply Migrations
+
+python manage.py migrate
+
+shell
+Copy code
+
+### 3️⃣ Run Server
+
+python manage.py runserver
+
+shell
+Copy code
+
+### 4️⃣ Open Browser
+
+http://127.0.0.1:8000/
+
+yaml
+Copy code
+
+---
+
+## 🔑 Admin Panel
+
+Create superuser:
+
+python manage.py createsuperuser
+
+yaml
+Copy code
+
+Access admin:
+
+http://127.0.0.1:8000/admin/
+
+yaml
+Copy code
+
+---
+
+## 📚 Learning Concepts Covered
+
+- Django Models & Relationships  
 - Django ORM & QuerySets  
-- CRUD operations  
+- Function-Based Views (FBV)  
+- CRUD Operations  
+- Template Rendering  
+- Forms Handling  
+- Filtering & Ordering  
+- Pagination  
 
-## How to Run the Project
+---
 
-1. Clone the repository
+## 📌 Purpose
 
-   git clone https://github.com/SANDEEPGL44/Student_data.git
+This project is built for **educational and practice purposes**.
 
-2. Activate virtual environment
+---
 
-   Windows:
-   .venv\Scripts\activate
+## 👨‍💻 Author
 
-3. Run server
-
-   python manage.py runserver
-
-4. Open in browser
-
-   http://127.0.0.1:8000/
+**Sandeep G L**  
+Python / Django Developer  
