@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Student</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #232526, #414345);
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            width: 420px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            animation: fadeIn 0.4s ease;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #e74a3b;
+        }
+
+        p {
+            color: #444;
+            font-size: 15px;
+            margin: 20px 0;
+        }
+
+        button {
+            background: linear-gradient(135deg, #e74a3b, #c0392b);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #666;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Delete Student</h2>
+
+        <p>Are you sure you want to delete <strong>{{ student.name }}</strong>?</p>
+
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Yes, Delete</button>
+        </form>
+
+        <a href="{% url 'students' %}">Cancel</a>
+    </div>
+
+</body>
+</html>
